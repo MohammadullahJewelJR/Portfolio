@@ -1,0 +1,99 @@
+@media screen and (max-width:992px){
+    .hero-right{
+        display: none !important;
+    }
+    .toggler,
+    #toggler{
+        display: block;
+    }
+    .navigation nav ul li{
+        display: block !important;
+        margin: 20px 0 !important;
+    }
+    header .navigation .drop-menu li {
+        margin: 0 !important;
+    }
+    li#first-item {
+        margin-top: 80px!important;
+    }
+    div#toggler {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .navigation nav .my-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: linear-gradient(45deg, #e20ef3, #1507ebb8);
+        width: 100%;
+        max-width: 300px;
+        height: 100vh;
+        z-index: 100;
+        transition: 0.4s all ease-in-out;
+        -webkit-transition: 0.4s all ease-in-out;
+        -moz-transition: 0.4s all ease-in-out;
+        -ms-transition: 0.4s all ease-in-out;
+        -o-transition: 0.4s all ease-in-out;
+}
+    .navigation nav .my-menu.active{
+        right: 0;
+    }
+    header .front-page .my-menu li a{
+        color: #fff !important;
+    }
+    #toggler span,
+    .toggler span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #05364d;
+        margin: auto;
+        margin-bottom: 4px;
+        transition: all 400ms linear;
+        cursor: pointer;
+        -webkit-transition: all 400ms linear;
+        -moz-transition: all 400ms linear;
+        -ms-transition: all 400ms linear;
+        -o-transition: all 400ms linear;
+    }
+    #toggler span:first-child {
+        transform: rotate(-45deg);
+        position: relative;
+        top: 7.5px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+    #toggler span:nth-child(2){
+        opacity: 0;
+    }
+    #toggler span:nth-child(3){
+        transform: rotate(45deg);
+        position: relative;
+        bottom: 7.5px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    } 
+    .my-menu li:hover .drop-menu{
+        top:3px;
+    }
+    ul.drop-menu{
+        position: relative;
+        top: 3px;
+        opacity: 1;
+        visibility: visible;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .myDropdown.active .drop-menu{
+        max-height: 100px;
+    }
+    .hero-section .hero-left{
+        display: block;
+        margin-top: 160px;
+    }
+}
